@@ -41,3 +41,8 @@ I made a huge plunder, will go back to the drawing board and make sure basins ar
 After realizing the function did have unexpected behavior, I decided to go back and make the function more work correctly
 with lists that have the highest cells before a basin/well forms. Now the function checks through the list both in the
 regular order and in reverse, then lastly the 2 outcomes are compared and where they overlap the result is calculated from.
+
+## Next up!
+As mentioned earlier, there is some edge cases which the function does not take into consideration. (Since I did cheat 
+a bit and spoke with Marc, I made sure any water forming on the edges would not remain though!) More over the function
+is yet to visualize the "grid/cells", let's see if we can make some print to the console at least!
