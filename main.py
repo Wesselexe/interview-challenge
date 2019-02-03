@@ -22,15 +22,15 @@ def cool_function_name(input_list):
     # Now the list is looped through in reverse order as well.
     for i in range(peak):
         for x in range(len(temp_list_backward) - 1):
-            if  temp_list_backward[x] > temp_list_backward[x + 1]:
+            if temp_list_backward[x] > temp_list_backward[x + 1]:
                 temp_list_backward[x + 1] += 1
 
     # Below the variable 'result_counter' is declared to count the number of cells that is now filled with water
     # compared to the list given. When the two temp lists overlap and exceeds the original list given, the number of
-    # cells the two temporary both exceeds the original list is added to the result counter. Lastly the the function
-    # returns the result.
+    # cells the two temporary both exceeds the original list is added to the result counter.
     result_counter = 0
     flipped_temp_list_backward = temp_list_backward[::-1]
+
     for i in range(len(temp_list_forward) - 1):
         if temp_list_forward[i] > input_list[i] and flipped_temp_list_backward[i] > input_list[i]:
             if temp_list_forward[i] > flipped_temp_list_backward[i]:
@@ -38,4 +38,33 @@ def cool_function_name(input_list):
             else:
                 result_counter += (temp_list_forward[i] - input_list[i])
 
+    # The blow section of code takes the input and output to visualize the grid with water in it. The '#' character
+    # symbolizes the given array/list and the '~' symbol is the water that fills the basin.
+    visual_grid = []
+
+    print "Grid:"
+    for i in range(0, peak + 1):
+        row_line = ""
+        for x in range(0, len(input_list)):
+            if input_list[x] > i:
+                row_line += "#"
+            elif temp_list_forward[x] > input_list[x] and flipped_temp_list_backward[x] > input_list[x]:
+                if temp_list_forward[x] >= flipped_temp_list_backward[x]:
+                    if flipped_temp_list_backward[x] > i:
+                        row_line += "~"
+                    else:
+                        row_line += " "
+                elif temp_list_forward[x] <= flipped_temp_list_backward[x]:
+                    if temp_list_forward[x] > i:
+                        row_line += "~"
+                    else:
+                        row_line += " "
+            else:
+                row_line += " "
+        visual_grid.append(row_line)
+    # Below section prints the grid out for the user in the terminal/console by joining the nested lists with a space.
+    for row in visual_grid[::-1]:
+        print " ".join(row)
+    # Lastly the output is returned.
     return result_counter
+
