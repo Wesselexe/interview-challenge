@@ -28,4 +28,8 @@ Solutions for the algorithmic part are possible to find online. Please be advise
 
 Happy hacking 😁!
 
-Test!
+## First attempt:
+The function made is very simple and manage to solve the challenge with the given array/list. But as the crafty programmer
+I am, I realize we might need to further test the function to make sure the result is not simple luck.
+Furthermore, I will need to account for edge cases. fx what if one of the "cells height" that is given is 0?
+(Spoiler alert, I cheated a bit and talked to Marc. If 0 is given within a basin, the water will fall through.)  
