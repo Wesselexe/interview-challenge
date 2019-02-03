@@ -36,3 +36,8 @@ Furthermore, I will need to account for edge cases. fx what if one of the "cells
 
 After adding another random test and finding the result by visualizing the grid on a piece of paper, one thing was clear
 I made a huge plunder, will go back to the drawing board and make sure basins are calculated correctly!
+
+## Second attempt:
+After realizing the function did have unexpected behavior, I decided to go back and make the function more work correctly
+with lists that have the highest cells before a basin/well forms. Now the function checks through the list both in the
+regular order and in reverse, then lastly the 2 outcomes are compared and where they overlap the result is calculated from.
