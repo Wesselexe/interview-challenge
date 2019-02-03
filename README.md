@@ -32,4 +32,7 @@ Happy hacking 😁!
 The function made is very simple and manage to solve the challenge with the given array/list. But as the crafty programmer
 I am, I realize we might need to further test the function to make sure the result is not simple luck.
 Furthermore, I will need to account for edge cases. fx what if one of the "cells height" that is given is 0?
-(Spoiler alert, I cheated a bit and talked to Marc. If 0 is given within a basin, the water will fall through.)  
+(Spoiler alert, I cheated a bit and talked to Marc. If 0 is given within a basin, the water will fall through.)
+
+After adding another random test and finding the result by visualizing the grid on a piece of paper, one thing was clear
+I made a huge plunder, will go back to the drawing board and make sure basins are calculated correctly!
