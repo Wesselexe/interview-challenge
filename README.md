@@ -27,3 +27,5 @@ Fork this repo with your solution. We want to see your progression through commi
 Solutions for the algorithmic part are possible to find online. Please be advised though that we do expect you to try and solve this without just googling the solution. In the end the most interesting thing is not whether you have the _absolute most optimal_ algorithm, but rather your thought process and work on how you arrived to your solution.
 
 Happy hacking 😁!
+
+Test!
